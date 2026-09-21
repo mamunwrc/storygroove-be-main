@@ -1,0 +1,41 @@
+---
+description: "API error handling patterns for storygroove-be"
+globs: ["**/controllers/**", "**/index.js", "**/config/tokenverify.js"]
+autoAttach: true
+---
+
+# Error handling — storygroove-be
+
+## HTTP status conventions
+
+| Status | Use |
+|--------|-----|
+| **400** | Malformed JSON, invalid input after validation |
+| **401** | Missing/invalid/expired JWT |
+| **403** | Subscription required, wrong role, OpenAI key missing where required |
+| **404** | User or resource not found |
+| **500** | Unexpected server errors (log, avoid leaking internals) |
+
+## JSON body
+
+`index.js` registers middleware that turns **JSON SyntaxError** (bad body) into **400** with a clear `message` about malformed data.
+
+## Middleware (`config/tokenverify.js`)
+
+Auth and subscription failures should **return JSON immediately** and **not** call `next()` with the error for those code paths. Use consistent `{ error: "..." }` shape.
+
+## Controllers
+
+Use `try`/`catch` (or equivalent) in async handlers. Log unexpected errors with `console.error` (or a future structured logger). Return safe messages to clients.
+
+## Rate limiting
+
+`middleware/checkRateLimit.js` may attach **`X-RateLimit-Warning`** (exposed in CORS). Treat limit responses per controller implementation.
+
+## Client expectations
+
+Downstream clients typically read **`response.data.error`** or **`response.data.message`**. Streaming endpoints should still return JSON error bodies on failure when not yet committed to the stream.
+
+## Standards doc
+
+See `docs/standards/error-handling.md` for narrative detail and examples.

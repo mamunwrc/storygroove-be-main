@@ -1,0 +1,44 @@
+---
+description: "Story Groove backend (storygroove-be) — Express API, MongoDB, AI and billing"
+alwaysApply: true
+---
+
+# Project overview — storygroove-be
+
+## What this is
+
+Backend API for **Story Groove**: novel creation, AI-assisted writing (story generation, Ellis scene review, Olivia Scene Design and Writing Studio), agent chat (Responses API default; Assistants API legacy), user auth, Stripe subscriptions, admin usage dashboards, and optional S3-backed user assets.
+
+## Tech stack
+
+- **Runtime**: Node.js, **Express**, **ES modules** (`import`/`export`).
+- **Database**: **MongoDB** via **Mongoose** — schemas in `models/*.js` (no Prisma).
+- **Auth**: JWT (`Authorization: Bearer`), middleware in `config/tokenverify.js`.
+- **AI**: OpenAI — primarily **Responses API** (`service/responsesApiService.js` and related); legacy **Assistants API** still wired under `/api/assistant` and `*-old` routes.
+- **Payments**: **Stripe** — REST under `/api/stripe`, catalog under `/api/subscription`, **webhook** `POST /webhook` (raw body).
+- **Files**: **Multer** (memory storage) for uploads; **AWS S3** (`config/s3Client.js`, `service/s3Service.js`) for stored objects. **GET `/userData/*`** proxies objects from the configured bucket (`index.js`).
+- **Static**: **GET `/backgrounds/*`** serves local `backgrounds/` images.
+
+## Key paths
+
+| Area | Location |
+|------|-----------|
+| Entry | `index.js` — CORS, JSON 10mb, DB connect, webhook, S3 proxy, route mounts |
+| Routes | `routers/*.js` |
+| Controllers | `controllers/*.js` |
+| Services | `service/*.js` |
+| Models | `models/*.js` |
+| Auth / limits | `config/tokenverify.js`, `middleware/checkRateLimit.js` |
+
+## HTTP mounts (summary)
+
+- `/api/user` — auth and profile  
+- `/api/novel` — novels, scenes, characters, manuscripts, Ellis/Olivia, covers  
+- `/api/v1` — agent chat threads/messages (Responses API + legacy aliases)  
+- `/api/assistant` — admin (agent prompts, methodology), legacy Assistants parity  
+- `/api/stripe`, `/api/subscription` — billing and plan list  
+- `/api/admin/usage`, `/api/admin/activity-logs` — **superadmin** tooling  
+
+## Conventions
+
+camelCase in JS, thin routers, business logic in controllers/services, one Mongoose model file per domain entity.

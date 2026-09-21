@@ -1,0 +1,23 @@
+{
+  "schema_version": "1",
+  "feature_id": "methodology-admin",
+  "title": "Methodology Administration",
+  "description": "Admin CRUD for Olivia methodology rules, prompt templates, and genre overlays.",
+  "source_paths": [
+    "routers/assistantRoute.js",
+    "controllers/methodologyAdminController.js",
+    "service/methodologyService.js",
+    "models/methodologyRuleModel.js",
+    "models/promptTemplateModel.js",
+    "models/genreOverlayModel.js",
+    "utils/methodologyBundle.js"
+  ],
+  "related_paths": [
+    "scripts/seedMethodologyFromJson.js",
+    "seed/olivia-methodology/"
+  ],
+  "entrypoints": [
+    "controllers/methodologyAdminController.js"
+  ],
+  "mapping_confidence": "high"
+}

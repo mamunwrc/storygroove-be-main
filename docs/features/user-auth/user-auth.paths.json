@@ -1,0 +1,23 @@
+{
+  "schema_version": "1",
+  "feature_id": "user-auth",
+  "title": "User Authentication and Profile",
+  "description": "Login, registration, 2FA, password reset, profile, and admin user management.",
+  "source_paths": [
+    "routers/userRoute.js",
+    "controllers/auth.js",
+    "controllers/userController.js",
+    "config/tokenverify.js",
+    "config/multer.js",
+    "utils/mailGun.js",
+    "utils/keyEcryption.js",
+    "validations/userDataValidations.js",
+    "models/user.js",
+    "models/token.js"
+  ],
+  "related_paths": [],
+  "entrypoints": [
+    "routers/userRoute.js"
+  ],
+  "mapping_confidence": "high"
+}

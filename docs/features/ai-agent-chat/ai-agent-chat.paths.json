@@ -1,0 +1,25 @@
+{
+  "schema_version": "1",
+  "feature_id": "ai-agent-chat",
+  "title": "AI Agent Chat",
+  "description": "Simone and Olivia agent chat threads via OpenAI Responses API.",
+  "source_paths": [
+    "routers/chatRoute.js",
+    "controllers/chatController.js",
+    "service/responsesApiService.js",
+    "models/threadModel.js",
+    "models/messageModel.js",
+    "models/userAgentModel.js",
+    "constants/simoneSession.js",
+    "config/multer.js",
+    "utils/oliviaResponsesTools.js",
+    "service/s3Service.js"
+  ],
+  "related_paths": [
+    "controllers/assistantController.js"
+  ],
+  "entrypoints": [
+    "routers/chatRoute.js"
+  ],
+  "mapping_confidence": "high"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1",
+  "feature_id": "ellis-scene-review",
+  "title": "Ellis Scene Review",
+  "description": "DOC/DOCX upload for Ellis and per-scene structural/character review (distinct from general manuscript import).",
+  "source_paths": [
+    "routers/novelRoute.js",
+    "controllers/novelController.js",
+    "models/ellisSceneReviewModel.js",
+    "models/reviewPillarModel.js",
+    "utils/reviewPrompts/getReviewCyclePrompts.js",
+    "service/responsesApiService.js",
+    "middleware/checkRateLimit.js"
+  ],
+  "related_paths": [
+    "utils/extractSceneTitle.js"
+  ],
+  "entrypoints": [
+    "routers/novelRoute.js"
+  ],
+  "mapping_confidence": "high"
+}

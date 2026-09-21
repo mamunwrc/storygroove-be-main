@@ -1,0 +1,44 @@
+---
+description: "Security practices for storygroove-be"
+globs: ["**/config/**", "**/middleware/**", "**/controllers/**"]
+autoAttach: true
+---
+
+# Security — storygroove-be
+
+## Authentication
+
+- **JWT** signed with **`JWT_SECRET`**; payload includes user id (see `user.createJWT()` in `models/user.js`).
+- Reject missing, malformed, or expired tokens with **401**.
+- **`authenticateUser`** adds **403** when **`openaiKey`** is absent (legacy flows).
+
+## Authorization
+
+- **Roles**: `user`, `admin`, `superadmin` on `User.role`.
+- **`requireAdmin`**: `admin` or `superadmin`.
+- **`requireSuperAdmin`**: `superadmin` only (usage dashboard, activity logs, Simone shared key endpoints).
+- **Subscription middleware** (`isSubscribedUser`): enforces Stripe plan entitlements derived from configured **price IDs**; special cases for agent chat POSTs (Ellis/Olivia/Simone). Admins bypass subscription checks inside this middleware.
+
+## Ownership
+
+Controllers must scope queries and updates by the authenticated user (and novel/thread ownership) so one tenant cannot fetch another user’s manuscripts, threads, or characters.
+
+## Secrets
+
+Never log or return **JWT_SECRET**, Stripe signing secrets, raw **OpenAI** keys from other users, or AWS credentials. All live in environment variables consumed at runtime.
+
+## Stripe webhook
+
+Verify event signatures using Stripe’s webhook secret and the **raw** request body. Reject tempered or replayed payloads per Stripe SDK behavior.
+
+## Uploads
+
+Validate **mimetype**, extension, and **size** in Multer. Do not concatenate untrusted filenames into filesystem paths without sanitization — user binaries go to **S3** with controlled keys (`s3Service`).
+
+## Transport
+
+Assume **HTTPS** in production for API and JWT in transit.
+
+## CORS
+
+Enabled with **`origin: process.env.CLIENT_URL`** and **`credentials: true`**; tighten origins for production if multiple frontends exist.

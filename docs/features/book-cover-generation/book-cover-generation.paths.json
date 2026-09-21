@@ -1,0 +1,25 @@
+{
+  "schema_version": "1",
+  "feature_id": "book-cover-generation",
+  "title": "Book Cover Generation",
+  "description": "Conversational cover workspace with gallery, quota, and S3 storage.",
+  "source_paths": [
+    "storygroove-be/routers/novelRoute.js",
+    "storygroove-be/controllers/coverController.js",
+    "storygroove-be/service/coverGenerationService.js",
+    "storygroove-be/utils/coverRenderQuota.js",
+    "storygroove-be/models/novelCoverVersionModel.js",
+    "storygroove-be/models/novelCoverMessageModel.js",
+    "storygroove-be/service/s3Service.js",
+    "storygroove-fe/src/component/BookCoverModal/",
+    "storygroove-fe/src/api/bookGeneration.js"
+  ],
+  "related_paths": [
+    "docs/features/s3-file-storage/",
+    "storygroove-be/index.js"
+  ],
+  "entrypoints": [
+    "storygroove-fe/src/component/BookCoverModal/BookCoverModal.jsx"
+  ],
+  "mapping_confidence": "high"
+}

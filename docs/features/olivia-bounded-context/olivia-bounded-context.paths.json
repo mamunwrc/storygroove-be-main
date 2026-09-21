@@ -1,0 +1,40 @@
+{
+  "schema_version": "1",
+  "feature_id": "olivia-bounded-context",
+  "title": "Olivia Bounded Context (Memory V2)",
+  "description": "Layered memory pipeline for Olivia editor and scene chat with token-budgeted context assembly.",
+  "source_paths": [
+    "service/contextAssembler.js",
+    "service/retrievalService.js",
+    "service/masterPromptSlice.js",
+    "service/oliviaDynamicContext.js",
+    "service/oliviaFocusResolver.js",
+    "service/memoryService.js",
+    "service/memoryWorker.js",
+    "service/memoryQueue.js",
+    "service/memoryInvalidator.js",
+    "service/storyStateBootstrap.js",
+    "service/characterCanonContext.js",
+    "utils/provisionNovelVectorStore.js",
+    "models/storyStateModel.js",
+    "models/sceneMemoryModel.js",
+    "models/episodicEventModel.js",
+    "models/relationshipEdgeModel.js",
+    "models/activeSceneStateModel.js",
+    "models/conversationCursorModel.js",
+    "models/characterStateModel.js",
+    "constants/oliviaMemory.js",
+    "constants/memoryRanking.js"
+  ],
+  "related_paths": [
+    "controllers/novelController.js",
+    "__tests__/contextAssemblerStability.test.mjs",
+    "__tests__/oliviaMemoryPipeline.test.mjs",
+    "__tests__/characterCanonContext.test.mjs",
+    "__tests__/masterPromptSlice.test.mjs"
+  ],
+  "entrypoints": [
+    "service/contextAssembler.js"
+  ],
+  "mapping_confidence": "high"
+}

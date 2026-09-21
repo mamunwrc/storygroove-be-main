@@ -1,0 +1,22 @@
+{
+  "schema_version": "1",
+  "feature_id": "s3-file-storage",
+  "title": "S3 File Storage",
+  "description": "AWS S3 uploads, signed URLs, and the /userData proxy for profile pics, chat attachments, book covers, and manuscripts.",
+  "source_paths": [
+    "service/s3Service.js",
+    "config/s3Client.js",
+    "config/multer.js",
+    "index.js"
+  ],
+  "related_paths": [
+    "controllers/userController.js",
+    "controllers/chatController.js",
+    "controllers/novelController.js",
+    "service/responsesApiService.js"
+  ],
+  "entrypoints": [
+    "index.js"
+  ],
+  "mapping_confidence": "high"
+}

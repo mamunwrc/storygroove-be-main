@@ -1,0 +1,18 @@
+{
+  "schema_version": "1",
+  "feature_id": "activity-log-admin",
+  "title": "Activity Log Administration",
+  "description": "Super-admin activity log listing API.",
+  "source_paths": [
+    "routers/activityLogRoute.js",
+    "controllers/activityLogController.js",
+    "models/activityLogModel.js",
+    "constants/activityLog.js",
+    "utils/queueActivityLog.js"
+  ],
+  "related_paths": [],
+  "entrypoints": [
+    "routers/activityLogRoute.js"
+  ],
+  "mapping_confidence": "high"
+}

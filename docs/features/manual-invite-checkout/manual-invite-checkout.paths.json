@@ -1,0 +1,23 @@
+{
+  "schema_version": "1",
+  "feature_id": "manual-invite-checkout",
+  "title": "Manual Invite Checkout (Superadmin)",
+  "description": "Superadmin-only Stripe Checkout link generation for a selected user, plus optional email delivery via the standard mail pipeline.",
+  "source_paths": [
+    "controllers/stripeController.js",
+    "routers/stripeRoute.js",
+    "utils/template/inviteCheckout.handlebars"
+  ],
+  "related_paths": [
+    "service/stripeService.js",
+    "utils/mailGun.js",
+    "config/tokenverify.js",
+    "models/user.js",
+    "utils/queueActivityLog.js"
+  ],
+  "entrypoints": [
+    "routers/stripeRoute.js",
+    "controllers/stripeController.js"
+  ],
+  "mapping_confidence": "high"
+}

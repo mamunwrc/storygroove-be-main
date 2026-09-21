@@ -1,0 +1,38 @@
+---
+description: "Coding conventions for storygroove-be (Express, Mongoose, ES modules)"
+alwaysApply: true
+---
+
+# Global conventions — storygroove-be
+
+## Naming
+
+- **Variables and functions**: camelCase (e.g. `getUserNovels`, `authenticateUserWithoutOpenAI`).
+- **Mongoose models**: PascalCase exports (e.g. `Novel`, `Thread`, `OliviaSceneSuggestion`).
+- **Files**: camelCase (`novelController.js`, `tokenverify.js`). Routers: `*Route.js`.
+
+## Modules
+
+- **ES modules only** (`import`/`export`) for application code.
+- **Semicolons**: used project-wide in backend JS.
+- **Async**: prefer `async`/`await`; handle errors with `try`/`catch` or forward to Express error handling where applicable.
+
+## Layers
+
+- **Routers**: declare method, path, middleware, controller. No business logic.
+- **Controllers**: validate input, call models/services, set HTTP status and JSON body.
+- **Services**: OpenAI, Stripe wrappers, S3, retrieval/context pipelines — reusable logic without Express types in function signatures.
+- **Models**: schema, indexes, hooks — persistence only.
+
+## Errors and responses
+
+- Return **JSON** with `error` and/or `message`; use **401** (auth), **403** (forbidden / subscription / role), **404** (missing resource), **400** (validation / malformed body), **500** (unexpected).
+- Global handler in `index.js` returns **400** for JSON `SyntaxError` bodies with a clear message.
+
+## Secrets
+
+Use `process.env` only. Do not commit `.env`, API keys, Stripe secrets, or JWT material.
+
+## Documentation
+
+Prefer updating `docs/` and `architecture/` when behavior changes; keep `.cursor/rules` summaries accurate.

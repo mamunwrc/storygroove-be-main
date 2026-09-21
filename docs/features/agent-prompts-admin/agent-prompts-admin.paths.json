@@ -1,0 +1,20 @@
+{
+  "schema_version": "1",
+  "feature_id": "agent-prompts-admin",
+  "title": "Agent Prompts Administration",
+  "description": "Admin CRUD for AI agent prompts, Simone key, and prompt bundle import/export.",
+  "source_paths": [
+    "routers/assistantRoute.js",
+    "controllers/assistantController.js",
+    "models/agentPromptModel.js",
+    "models/simoneConfigModel.js",
+    "utils/agentPromptBundle.js"
+  ],
+  "related_paths": [
+    "__tests__/agentPromptBundle.test.mjs"
+  ],
+  "entrypoints": [
+    "routers/assistantRoute.js"
+  ],
+  "mapping_confidence": "high"
+}

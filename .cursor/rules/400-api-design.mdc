@@ -1,0 +1,37 @@
+---
+description: "REST API conventions for storygroove-be"
+globs: ["**/routers/**", "**/controllers/**", "**/docs/api/**"]
+autoAttach: true
+---
+
+# API design — storygroove-be
+
+## Base paths
+
+- API routes are under **`/api`** (except root `GET /` health string, `POST /webhook`, `GET /userData/*`, `GET /backgrounds/*`).
+- **Chat** uses prefix **`/api/v1`**. Some Stripe and subscription handlers use **`/v2`** path segments for newer DTO shapes.
+
+## Authentication
+
+- **`Authorization: Bearer <JWT>`** after login/register.
+- **`authenticateUserWithoutOpenAI`**: valid JWT, load `req.user`. Used for most routes including OpenAI Responses flows.
+- **`authenticateUser`**: JWT plus user must have **`openaiKey`** (legacy Assistants-style flows, e.g. `deleteProject`).
+- **`isSubscribedUser`**: requires an authenticated user; **admins** bypass. For most protected novel/chat actions, user must have Stripe **Builder** or **Studio** entitlements (price IDs from env: `PRICE_BUILDER_MONTHLY`, `PRICE_BUILDER_YEARLY`, `PRICE_BUILDER_LEGACY_IDS`, `PRICE_STUDIO_MONTHLY`, `PRICE_STUDIO_YEARLY`) as determined by **`StripeService.getActiveSubscriptions`** on **`user.stripeCustomerId`**. **POST `/api/v1/chat` and POST `/api/v1/thread`** additionally apply **per-agent** rules: Ellis → Studio only; Olivia variants → Builder or Studio; Simone → paid plan **or** Simone one-time credit / purchase (see `tokenverify.js`).
+
+## Body and uploads
+
+- JSON bodies: Express limit **10mb**; invalid JSON hits the global **400** handler in `index.js`.
+- **Stripe webhook**: raw body on `POST /webhook` only — must stay before the global `express.json()` middleware.
+- Multipart: Multer **memory** storage; field names such as **`document`** (manuscripts, Ellis/Olivia docs) and **`image`** (profile). Chat file upload: **`files`** array.
+
+## Response shape
+
+Success: arbitrary JSON from controllers (no required envelope). Errors: JSON with **`error`** and/or **`message`**; pick appropriate HTTP status codes.
+
+## Naming
+
+Resource IDs in paths are typically Mongo **ObjectIds** (`:novelId`, `:threadId`, …). Some OpenAI thread ids are plain strings stored on `Thread.threadId`.
+
+## Documentation
+
+Maintain endpoint tables in `docs/api/endpoints/` and overview in `docs/api/contracts/api-overview.md`.

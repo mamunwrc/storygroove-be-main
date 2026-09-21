@@ -1,0 +1,29 @@
+{
+  "schema_version": "1",
+  "feature_id": "subscriptions-billing",
+  "title": "Subscriptions and Billing",
+  "description": "Stripe subscriptions, public checkout sessions, billing portal, webhooks, and trial gating.",
+  "source_paths": [
+    "routers/stripeRoute.js",
+    "routers/subscriptionRoute.js",
+    "controllers/stripeController.js",
+    "controllers/subscriptionController.js",
+    "service/stripeService.js",
+    "service/stripeWebhooksService.js",
+    "service/checkoutProvisioningService.js",
+    "models/subscriberModel.js",
+    "models/subscriptionModel.js",
+    "models/invoicesModel.js",
+    "models/checkoutProvisionModel.js",
+    "config/tokenverify.js"
+  ],
+  "related_paths": [
+    "index.js",
+    "docs/SOPs/deployment/stripe-payment-links.md"
+  ],
+  "entrypoints": [
+    "index.js",
+    "routers/stripeRoute.js"
+  ],
+  "mapping_confidence": "high"
+}

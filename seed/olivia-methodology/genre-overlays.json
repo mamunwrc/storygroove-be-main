@@ -1,0 +1,1076 @@
+[
+  {
+    "genreKey": "romance",
+    "displayName": "Romance",
+    "category": "romance",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "regency romance",
+      "paranormal romance",
+      "romantic suspense",
+      "holiday romance",
+      "contemporary romance",
+      "historical romance"
+    ],
+    "source": "v5_MP.pdf#romance",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 2,
+        "label": "Meet Cute",
+        "beat": "Establish romantic spark or tension."
+      },
+      {
+        "sceneIndex": 7,
+        "label": "Intimate Moment or First Kiss",
+        "beat": "Let hope build."
+      },
+      {
+        "sceneIndex": 10,
+        "label": "Romantic Complication",
+        "beat": "Misunderstanding or wedge."
+      },
+      {
+        "sceneIndex": 12,
+        "label": "Breakup or All Is Lost",
+        "beat": "Romantic collapse."
+      },
+      {
+        "sceneIndex": 14,
+        "label": "Grand Gesture or Reunion",
+        "beat": "Resolution of romantic arc."
+      }
+    ],
+    "notes": "If the writer specifies a Romance subgenre (Regency, Paranormal, Romantic Suspense, Holiday), apply the base Romance overlay beats. Then adjust world/setting/tone expectations accordingly (Regency → historical detail, Paranormal → supernatural rules, Suspense → danger woven into relationship arc)."
+  },
+  {
+    "genreKey": "spicy_romance",
+    "displayName": "Spicy Romance",
+    "category": "romance",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "steamy romance",
+      "erotic romance",
+      "adult romance"
+    ],
+    "source": "v5_MP.pdf#spicy_romance",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "beat": "First encounter with strong physical attraction cues."
+      },
+      {
+        "sceneIndex": 3,
+        "beat": "Flirty or tension-filled exchange hinting at chemistry."
+      },
+      {
+        "sceneIndex": 6,
+        "beat": "First physical contact with heightened intimacy stakes."
+      },
+      {
+        "sceneIndex": 9,
+        "beat": "Midpoint intimate scene that deepens emotional and physical connection."
+      },
+      {
+        "sceneIndex": 12,
+        "beat": "Moment of intense vulnerability or passion paired with emotional risk."
+      },
+      {
+        "sceneIndex": 14,
+        "beat": "Climax resolves both romantic and intimate stakes with a satisfying payoff."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "genreKey": "romcom",
+    "displayName": "Romantic Comedy",
+    "category": "romance",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "rom com",
+      "romantic comedy",
+      "romance comedy"
+    ],
+    "source": "v5_MP.pdf#romantic_comedy",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 2,
+        "label": "Inciting Incident — Comedic Meet Disaster",
+        "beat": "The first meeting or re-encounter between love interests happens under awkward, funny, or chaotic circumstances that hint at their chemistry and conflict."
+      },
+      {
+        "sceneIndex": 4,
+        "label": "First Major Reversal",
+        "beat": "A forced proximity or shared goal situation with high comedic potential. Stakes are personal/emotional but layered with situational humor (misunderstandings, embarrassing mishaps)."
+      },
+      {
+        "sceneIndex": 7,
+        "label": "Midpoint",
+        "beat": "Banter or shared vulnerability scene that deepens attraction, often under absurd or heightened comedic circumstances. Include a comedic set piece that brings them closer."
+      },
+      {
+        "sceneIndex": 9,
+        "label": "Dark Night of the Soul",
+        "beat": "The humor temporarily drops to show real emotional stakes. Misunderstanding or external conflict threatens the relationship."
+      },
+      {
+        "sceneIndex": 11,
+        "label": "Climax",
+        "beat": "Big romantic gesture that also ties into a callback from earlier humor — delivers both emotional payoff and a final laugh or 'aww' moment."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "genreKey": "mystery_thriller",
+    "displayName": "Mystery / Thriller",
+    "category": "mystery",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "mystery",
+      "thriller",
+      "crime",
+      "detective",
+      "police procedural",
+      "psychological thriller",
+      "domestic thriller"
+    ],
+    "source": "v5_MP.pdf#mystery_thriller",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "label": "Crime or Mystery Setup",
+        "beat": "Introduce the puzzle."
+      },
+      {
+        "sceneIndex": 4,
+        "label": "Red Herring or Misleading Lead",
+        "beat": "False trail."
+      },
+      {
+        "sceneIndex": 7,
+        "label": "Major Clue or Breakthrough",
+        "beat": "New insight emerges."
+      },
+      {
+        "sceneIndex": 10,
+        "label": "Suspect Twist or Setback",
+        "beat": "Doubt or reversal."
+      },
+      {
+        "sceneIndex": 14,
+        "label": "Reveal or Confrontation",
+        "beat": "Truth is exposed."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "genreKey": "cozy_mystery",
+    "displayName": "Cozy Mystery",
+    "category": "mystery",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "cozy",
+      "amateur sleuth",
+      "small town mystery"
+    ],
+    "source": "v5_MP.pdf#cozy_mystery",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "beat": "Charming small-town or close-knit community setup; hint of crime-to-come."
+      },
+      {
+        "sceneIndex": 3,
+        "beat": "Discovery of the crime by the amateur sleuth."
+      },
+      {
+        "sceneIndex": 5,
+        "beat": "Lighthearted clue-hunting scene involving quirky locals."
+      },
+      {
+        "sceneIndex": 7,
+        "beat": "Red herring or humorous misdirection."
+      },
+      {
+        "sceneIndex": 10,
+        "beat": "Personal stake for sleuth escalates (friend accused, reputation at risk)."
+      },
+      {
+        "sceneIndex": 14,
+        "beat": "Culprit reveal in a socially charged or comedic confrontation."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "genreKey": "epic_fantasy",
+    "displayName": "High / Epic Fantasy",
+    "category": "speculative",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "high fantasy",
+      "epic fantasy",
+      "secondary world fantasy",
+      "grimdark",
+      "sword and sorcery"
+    ],
+    "source": "v5_MP.pdf#high_epic_fantasy",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneRange": {
+          "from": 1,
+          "to": 2
+        },
+        "beat": "Ground the reader in a secondary world — hint at magic system, lore, or ruling order."
+      },
+      {
+        "sceneRange": {
+          "from": 4,
+          "to": 5
+        },
+        "beat": "Early clash between factions, clans, or powers; protagonist glimpses scale of stakes."
+      },
+      {
+        "sceneRange": {
+          "from": 6,
+          "to": 8
+        },
+        "beat": "Entry into quest or journey arc; allies and enemies introduced. Worldbuilding expands."
+      },
+      {
+        "sceneIndex": 9,
+        "label": "Midpoint",
+        "beat": "Revelation of prophecy, magic system limit, or truth about world order reframes the quest."
+      },
+      {
+        "sceneIndex": 12,
+        "label": "Low Point",
+        "beat": "Protagonist or group shattered by betrayal, loss, or overwhelming opposing force."
+      },
+      {
+        "sceneIndex": 14,
+        "label": "Climax",
+        "beat": "Epic confrontation with fate, ruler, or magical system. Personal and world stakes collide."
+      },
+      {
+        "sceneIndex": 15,
+        "label": "Resolution",
+        "beat": "Return or settlement in a transformed world; seeds of legacy or future cycle."
+      }
+    ],
+    "notes": "Word count: 100k–120k+ typical for market expectations."
+  },
+  {
+    "genreKey": "urban_fantasy",
+    "displayName": "Urban / Contemporary Fantasy",
+    "category": "speculative",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "urban fantasy",
+      "contemporary fantasy",
+      "modern fantasy"
+    ],
+    "source": "v5_MP.pdf#urban_contemporary_fantasy",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "beat": "Establish everyday setting and protagonist's 'normal' life; drop a subtle magical disruption."
+      },
+      {
+        "sceneRange": {
+          "from": 3,
+          "to": 4
+        },
+        "beat": "Protagonist forced to acknowledge hidden magical society, artifact, or creature."
+      },
+      {
+        "sceneIndex": 6,
+        "beat": "First entry into magical underworld; rules partially revealed."
+      },
+      {
+        "sceneRange": {
+          "from": 7,
+          "to": 9
+        },
+        "label": "Midpoint",
+        "beat": "Collision between mundane and magical stakes; secret world threatens to bleed into everyday life."
+      },
+      {
+        "sceneIndex": 12,
+        "label": "Low Point",
+        "beat": "Isolation or betrayal from both magical and mundane communities."
+      },
+      {
+        "sceneIndex": 14,
+        "label": "Climax",
+        "beat": "Showdown where protagonist balances magical power against personal stakes (family, job, friends, love)."
+      },
+      {
+        "sceneIndex": 15,
+        "label": "Resolution",
+        "beat": "Return to ordinary life with a transformed relationship to magic — acceptance, concealment, or integration."
+      }
+    ],
+    "notes": "Word count: 80k–100k typical for market expectations."
+  },
+  {
+    "genreKey": "sci_fi",
+    "displayName": "Science Fiction",
+    "category": "speculative",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "sci-fi",
+      "science fiction",
+      "space opera",
+      "hard sci-fi",
+      "soft sci-fi",
+      "near-future dystopia"
+    ],
+    "source": "v5_MP.pdf#science_fiction",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "beat": "Establish core scientific/technological premise or future world order; hint at its promise and risks."
+      },
+      {
+        "sceneRange": {
+          "from": 3,
+          "to": 4
+        },
+        "beat": "Early disruption — tech or system malfunctions, or societal tension erupts."
+      },
+      {
+        "sceneRange": {
+          "from": 6,
+          "to": 7
+        },
+        "beat": "Protagonist enters deeper into the speculative system (spacecraft, AI network, corporate/military hierarchy). Rules of the tech or society revealed in part."
+      },
+      {
+        "sceneIndex": 9,
+        "label": "Midpoint",
+        "beat": "Revelation of the truth or hidden cost of the system/technology reframes stakes."
+      },
+      {
+        "sceneIndex": 12,
+        "label": "Low Point",
+        "beat": "Catastrophic failure or betrayal tied to the system/technology; protagonist faces despair."
+      },
+      {
+        "sceneIndex": 14,
+        "label": "Climax",
+        "beat": "Final confrontation hinges on technology or science — tool, system, or discovery tested to breaking point."
+      },
+      {
+        "sceneIndex": 15,
+        "label": "Resolution",
+        "beat": "Show the aftermath — how society, tech, or the protagonist's relationship to science has changed."
+      }
+    ],
+    "notes": "Word count: 90k–110k typical for market expectations; space opera can extend to 120k."
+  },
+  {
+    "genreKey": "magical_realism",
+    "displayName": "Magical Realism",
+    "category": "speculative",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "magical realism",
+      "literary magical realism"
+    ],
+    "source": "v5_MP.pdf#magical_realism",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "beat": "Introduce the ordinary world with one seamless magical element, accepted as part of reality."
+      },
+      {
+        "sceneIndex": 4,
+        "beat": "Magical element subtly shifts emotional or thematic stakes in a personal relationship or conflict."
+      },
+      {
+        "sceneIndex": 8,
+        "beat": "Surreal or symbolic event disrupts the balance between magical and ordinary life."
+      },
+      {
+        "sceneIndex": 12,
+        "beat": "Magical and real-world consequences intertwine, forcing a choice or revealing truth."
+      },
+      {
+        "sceneIndex": 15,
+        "beat": "Resolution blends magical and mundane so completely that the reader accepts both as inevitable."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "genreKey": "dystopian",
+    "displayName": "Dystopian / Post-Apocalyptic",
+    "category": "speculative",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "dystopia",
+      "dystopian",
+      "post-apocalyptic",
+      "post apocalyptic",
+      "apocalyptic"
+    ],
+    "source": "v5_MP.pdf#dystopian_post_apocalyptic",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "beat": "Establish the broken world order (scarcity, oppression, devastation)."
+      },
+      {
+        "sceneRange": {
+          "from": 3,
+          "to": 5
+        },
+        "beat": "Show survival challenges and introduce rules of the oppressive system or environment."
+      },
+      {
+        "sceneIndex": 7,
+        "label": "Rising Action",
+        "beat": "Escalate dangers or oppression; protagonist tests boundaries of survival or authority."
+      },
+      {
+        "sceneIndex": 9,
+        "label": "Midpoint",
+        "beat": "Revelation of a systemic lie, betrayal, or shocking truth about the world."
+      },
+      {
+        "sceneIndex": 12,
+        "label": "Low Point",
+        "beat": "Protagonist crushed by system or world's dangers; community fractured."
+      },
+      {
+        "sceneIndex": 14,
+        "label": "Climax",
+        "beat": "Final stand or resistance — choice between survival vs. change/defiance."
+      },
+      {
+        "sceneIndex": 15,
+        "label": "Resolution",
+        "beat": "Glimpse of cost and aftermath; show whether hope, resistance, or bleak survival remains."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "genreKey": "paranormal_thriller",
+    "displayName": "Paranormal Thriller",
+    "category": "speculative",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "paranormal",
+      "paranormal thriller",
+      "supernatural thriller"
+    ],
+    "source": "v5_MP.pdf#paranormal_thriller",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "beat": "Establish normal world with subtle supernatural hint."
+      },
+      {
+        "sceneIndex": 3,
+        "beat": "First undeniable supernatural event or clue."
+      },
+      {
+        "sceneIndex": 6,
+        "beat": "Paranormal rules partially revealed; threat intensifies."
+      },
+      {
+        "sceneIndex": 9,
+        "label": "Midpoint",
+        "beat": "Midpoint confrontation with supernatural force; stakes expand."
+      },
+      {
+        "sceneIndex": 12,
+        "beat": "Protagonist forced into dangerous alignment or deal with the supernatural."
+      },
+      {
+        "sceneIndex": 14,
+        "label": "Climax",
+        "beat": "Climax intertwines human and supernatural stakes in final confrontation."
+      }
+    ],
+    "notes": "If Paranormal Thrillers blend suspense beats with speculative rules: if the supernatural is light-touch (a haunting or possession inside a crime story), it leans more Mystery/Thriller. If the supernatural world is central (demons, other realms, detailed rules), it leans closer to Fantasy/Speculative. Olivia adapts the beats accordingly."
+  },
+  {
+    "genreKey": "adventure_techno_thriller",
+    "displayName": "Adventure / Techno-Political Thriller",
+    "category": "speculative",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "techno-thriller",
+      "techno thriller",
+      "political thriller",
+      "adventure thriller",
+      "geopolitical thriller"
+    ],
+    "source": "v5_MP.pdf#adventure_techno_political_thriller",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "beat": "Introduce expedition/tech element in action, plus a hint of political/corporate rivalry."
+      },
+      {
+        "sceneRange": {
+          "from": 4,
+          "to": 6
+        },
+        "beat": "Early setback caused by tech failure, sabotage, or bureaucratic/political interference."
+      },
+      {
+        "sceneRange": {
+          "from": 7,
+          "to": 9
+        },
+        "label": "Midpoint",
+        "beat": "Breakthrough or discovery reframes mission; rival factions or institutions raise the stakes."
+      },
+      {
+        "sceneRange": {
+          "from": 10,
+          "to": 12
+        },
+        "beat": "Rising conflict where tech falters and institutional pressure mounts (cover-up, rival claim, government crackdown)."
+      },
+      {
+        "sceneIndex": 14,
+        "label": "Climax",
+        "beat": "Confrontation blends tech risk, human courage, and political/institutional stakes. Outcome hinges on both the tool's performance and human choice."
+      },
+      {
+        "sceneIndex": 15,
+        "label": "Resolution",
+        "beat": "Show fallout — cost of tech reliance, geopolitical/corporate repercussions, and resilience of loyalty or truth."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "genreKey": "horror_psych_suspense",
+    "displayName": "Horror / Psychological Suspense",
+    "category": "speculative",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "horror",
+      "psychological horror",
+      "psychological suspense",
+      "gothic horror"
+    ],
+    "source": "v5_MP.pdf#horror_psychological_suspense",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "beat": "Creeping Unease or Small Off-Kilter Detail."
+      },
+      {
+        "sceneIndex": 3,
+        "beat": "Disturbance Escalates — Threat becomes visible or felt."
+      },
+      {
+        "sceneIndex": 7,
+        "beat": "False Safety — A moment where things seem to calm."
+      },
+      {
+        "sceneIndex": 10,
+        "beat": "Terrifying Revelation — The true nature of the horror is revealed (supernatural, human, or psychological)."
+      },
+      {
+        "sceneIndex": 14,
+        "beat": "Survival or Descent — Do they overcome or succumb?"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "genreKey": "womens_fiction",
+    "displayName": "Women's Fiction / Contemporary Drama",
+    "category": "realistic",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "women's fiction",
+      "womens fiction",
+      "contemporary drama",
+      "book club fiction",
+      "upmarket fiction"
+    ],
+    "source": "v5_MP.pdf#womens_fiction_contemporary_drama",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 2,
+        "beat": "Relational Conflict or Fulcrum — Mirror theme of identity."
+      },
+      {
+        "sceneIndex": 5,
+        "beat": "Personal Breakdown or Avoidance — Pushes away support."
+      },
+      {
+        "sceneIndex": 9,
+        "beat": "Mirror Moment — Deep self-reflection or contradiction."
+      },
+      {
+        "sceneIndex": 12,
+        "beat": "Fracture with Loved One — Escalated emotional consequences."
+      },
+      {
+        "sceneIndex": 15,
+        "beat": "Transformation or Quiet Catharsis — Reflect inner shift."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "genreKey": "literary_fiction",
+    "displayName": "Literary Fiction",
+    "category": "realistic",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "literary",
+      "literary fiction",
+      "literary novel"
+    ],
+    "source": "v5_MP.pdf#literary_fiction",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "beat": "Reveal protagonist's central longing or flaw through a moment of everyday life that hints at the story's core theme."
+      },
+      {
+        "sceneIndex": 4,
+        "beat": "Inciting disruption to a key relationship, identity belief, or worldview."
+      },
+      {
+        "sceneIndex": 7,
+        "beat": "Small but pivotal turning point in a relationship or internal struggle that shifts trajectory."
+      },
+      {
+        "sceneIndex": 9,
+        "label": "Midpoint",
+        "beat": "Deep internal conflict, moral dilemma, or emotional rupture that challenges self-concept."
+      },
+      {
+        "sceneIndex": 12,
+        "beat": "Confrontation or decision that redefines the protagonist's understanding of self or others."
+      },
+      {
+        "sceneIndex": 15,
+        "beat": "Quiet but thematically resonant close, offering emotional or philosophical resolution rather than plot finality."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "genreKey": "historical_fiction",
+    "displayName": "Historical Fiction",
+    "category": "realistic",
+    "appliesAs": "base_genre",
+    "aliases": [
+      "historical fiction",
+      "historical",
+      "period drama",
+      "period fiction"
+    ],
+    "source": "v5_MP.pdf#historical_fiction",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "beat": "Period-world anchoring moment that foreshadows the core conflict."
+      },
+      {
+        "sceneIndex": 3,
+        "beat": "Cultural or political pressure complicates the protagonist's goal."
+      },
+      {
+        "sceneIndex": 5,
+        "beat": "Historical constraint or societal rule forces a turning point."
+      },
+      {
+        "sceneIndex": 9,
+        "label": "Midpoint",
+        "beat": "Midpoint tied to a real historical event or major shift in power."
+      },
+      {
+        "sceneIndex": 12,
+        "beat": "Historical circumstances escalate stakes to their highest point."
+      },
+      {
+        "sceneIndex": 14,
+        "label": "Climax",
+        "beat": "Climax intersects with a historical turning point; personal and societal stakes collide."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "genreKey": "ya_audience",
+    "displayName": "Young Adult (YA)",
+    "category": "audience",
+    "appliesAs": "additional_overlay",
+    "aliases": [
+      "young adult",
+      "ya",
+      "teen fiction"
+    ],
+    "source": "v5_MP.pdf#ya",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "beat": "Establish teen social ecosystem (school, home, or friend group); hint at core wound or insecurity."
+      },
+      {
+        "sceneIndex": 3,
+        "label": "Inciting",
+        "beat": "Disruption threatens belonging, reputation, or goal (team spot, audition, scholarship, loyalty test)."
+      },
+      {
+        "sceneIndex": 6,
+        "label": "Enter New World",
+        "beat": "First major risk to social standing or family expectation; step into unfamiliar space."
+      },
+      {
+        "sceneIndex": 9,
+        "label": "Midpoint",
+        "beat": "Identity reveal or truth about self/family reframes the protagonist's goal."
+      },
+      {
+        "sceneIndex": 12,
+        "label": "Low Point",
+        "beat": "Public fallout, embarrassment, or friend-group fracture; mentor/teacher/coach may withdraw."
+      },
+      {
+        "sceneIndex": 14,
+        "label": "Climax",
+        "beat": "Identity choice shown publicly (performance, confrontation, taking the risk)."
+      },
+      {
+        "sceneIndex": 15,
+        "label": "Resolution",
+        "beat": "New equilibrium in school/home/friend world; belonging earned or autonomy claimed."
+      }
+    ],
+    "notes": "YA favors close 1st/3rd POV, fast pacing, shorter scenes/chapters, fade-to-black romance heat, and hooks at scene ends.\n\nIf the writer specifies a YA story and a Fantasy/Sci-Fi element (High Fantasy, Urban Fantasy, Dystopian, etc.), apply the YA overlay in addition to the relevant Fantasy/Speculative overlay. This ensures the outline reflects both audience-specific tone (shorter chapters, identity stakes) and genre-specific beats (quest structure, magic system rules)."
+  },
+  {
+    "genreKey": "mg_audience",
+    "displayName": "Middle Grade (MG)",
+    "category": "audience",
+    "appliesAs": "additional_overlay",
+    "aliases": [
+      "middle grade",
+      "mg",
+      "children's fiction",
+      "tween fiction"
+    ],
+    "source": "v5_MP.pdf#mg",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "beat": "Show curiosity and agency in kid-level setting (school, family, neighborhood); playful crack in the ordinary world."
+      },
+      {
+        "sceneIndex": 3,
+        "label": "Inciting",
+        "beat": "A discovery, dare, or disruption that kicks off the adventure."
+      },
+      {
+        "sceneIndex": 6,
+        "label": "Enter New World",
+        "beat": "Step into a new rule-set (hidden world, team mission, big responsibility)."
+      },
+      {
+        "sceneIndex": 9,
+        "label": "Midpoint",
+        "beat": "Clever solution or teamwork moment that re-aims the quest/goal."
+      },
+      {
+        "sceneIndex": 12,
+        "label": "Low Point",
+        "beat": "Apparent defeat or separation from friends; stakes framed in kid terms (lost trust, grounded, danger of losing a pet or place)."
+      },
+      {
+        "sceneIndex": 14,
+        "label": "Climax",
+        "beat": "Triumph through cleverness, teamwork, or courage rather than brute force."
+      },
+      {
+        "sceneIndex": 15,
+        "label": "Resolution",
+        "beat": "Return to school/home/friend group; ordinary life restored with a playful or heartwarming twist."
+      }
+    ],
+    "notes": "MG favors humor, brisk chaptering, age-appropriate peril, simpler subplots, and clear cause-and-effect plotting.\n\nIf the writer specifies an MG story and a Fantasy/Sci-Fi element (High Fantasy, Urban Fantasy, Dystopian, etc.), apply the MG overlay in addition to the relevant Fantasy/Speculative overlay."
+  },
+  {
+    "genreKey": "lgbtq_representation",
+    "displayName": "LGBTQ+ Representation Overlay",
+    "category": "structural",
+    "appliesAs": "additional_overlay",
+    "aliases": [
+      "lgbtq",
+      "lgbtq+",
+      "lgbt",
+      "queer representation"
+    ],
+    "source": "v5_MP.pdf#lgbtq_representation",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [],
+    "notes": "Integrate identity and relationships naturally into the base genre beats. Do not make identity the central conflict unless the writer indicates that's their intent. This overlay ensures representation is meaningful, organic, and consistent with the story's tone."
+  },
+  {
+    "genreKey": "satire_humor",
+    "displayName": "Satire / Humor Overlay",
+    "category": "structural",
+    "appliesAs": "additional_overlay",
+    "aliases": [
+      "satire",
+      "humor",
+      "comedic",
+      "satirical"
+    ],
+    "source": "v5_MP.pdf#satire_humor",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [],
+    "notes": "Humor should arise from character voice, social commentary, or situational irony while still preserving the genre's core beats. Use this overlay to highlight where banter, irony, or exaggerated scenarios amplify pacing and emotional impact without derailing plot stakes."
+  },
+  {
+    "genreKey": "speculative",
+    "displayName": "Speculative Fiction Overlay",
+    "category": "structural",
+    "appliesAs": "additional_overlay",
+    "aliases": [
+      "speculative",
+      "what-if",
+      "alternate history",
+      "speculative element"
+    ],
+    "source": "v5_MP.pdf#speculative_fiction",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "beat": "Signal the speculative element through a striking but integrated detail, making it feel part of the world's normalcy."
+      },
+      {
+        "sceneRange": {
+          "from": 6,
+          "to": 8
+        },
+        "beat": "Expand its influence; reveal more of its rules, risks, or contradictions as it impacts the protagonist's journey."
+      },
+      {
+        "sceneIndex": 12,
+        "beat": "Force a confrontation or choice where the speculative element becomes inseparable from the protagonist's emotional or thematic stakes."
+      },
+      {
+        "sceneRange": {
+          "from": 14,
+          "to": 15
+        },
+        "beat": "Resolve or transform the speculative element's role in the world, leaving a lasting thematic or emotional imprint."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "genreKey": "dual_timeline",
+    "displayName": "Dual Timeline Overlay",
+    "category": "structural",
+    "appliesAs": "additional_overlay",
+    "aliases": [
+      "dual timeline",
+      "split timeline",
+      "two timeline",
+      "parallel timeline"
+    ],
+    "source": "v5_MP.pdf#dual_timeline",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneIndex": 1,
+        "beat": "Establish Timeline A's hook."
+      },
+      {
+        "sceneIndex": 2,
+        "beat": "Establish Timeline B's hook, mirrored tone or theme."
+      },
+      {
+        "sceneIndex": 6,
+        "beat": "Reveal in one timeline reframes stakes in the other."
+      },
+      {
+        "sceneIndex": 10,
+        "beat": "Parallel crises in both timelines escalate stakes."
+      },
+      {
+        "sceneIndex": 13,
+        "beat": "Climactic beat in Timeline A triggers resolution in Timeline B."
+      },
+      {
+        "sceneIndex": 14,
+        "label": "Converging Climax",
+        "beat": "Converging climax delivers thematic or emotional payoff across both timelines."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "genreKey": "quest_heros_journey",
+    "displayName": "Quest / Hero's Journey Overlay",
+    "category": "structural",
+    "appliesAs": "additional_overlay",
+    "aliases": [
+      "quest",
+      "hero's journey",
+      "heros journey",
+      "mentor",
+      "threshold",
+      "trials"
+    ],
+    "source": "v5_MP.pdf#quest_heros_journey",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneRange": {
+          "from": 1,
+          "to": 3
+        },
+        "label": "Ordinary World + Call/Refusal",
+        "beat": "Inciting."
+      },
+      {
+        "sceneRange": {
+          "from": 5,
+          "to": 6
+        },
+        "label": "Mentor + Threshold",
+        "beat": "Mentor nudge → Threshold crossed (Act 2 start)."
+      },
+      {
+        "sceneRange": {
+          "from": 7,
+          "to": 8
+        },
+        "label": "Trials",
+        "beat": "Trials ladder (2–3 tests escalating; allies & enemies)."
+      },
+      {
+        "sceneIndex": 9,
+        "label": "Inmost Cave / Midpoint Revelation",
+        "beat": "Midpoint Revelation."
+      },
+      {
+        "sceneRange": {
+          "from": 10,
+          "to": 12
+        },
+        "label": "Ordeal",
+        "beat": "Ordeal fallout; gain the boon/tool/knowledge."
+      },
+      {
+        "sceneRange": {
+          "from": 13,
+          "to": 14
+        },
+        "label": "Road Back + Climax",
+        "beat": "Road back → Climax (final test)."
+      },
+      {
+        "sceneIndex": 15,
+        "label": "Return with the Elixir",
+        "beat": "Return with the Elixir (visible change to ordinary world)."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "genreKey": "framing_device",
+    "displayName": "Framing Device Overlay",
+    "category": "structural",
+    "appliesAs": "additional_overlay",
+    "aliases": [
+      "framing device",
+      "epistolary",
+      "letters",
+      "journal entries",
+      "found footage",
+      "interview format"
+    ],
+    "source": "v5_MP.pdf#framing_device",
+    "enabled": true,
+    "applicabilityNote": "",
+    "beats": [
+      {
+        "sceneRange": {
+          "from": 1,
+          "to": 5
+        },
+        "label": "[FRAME] seed",
+        "beat": "Seed a [FRAME] beat in Act 1."
+      },
+      {
+        "sceneRange": {
+          "from": 6,
+          "to": 10
+        },
+        "label": "[FRAME] expansion",
+        "beat": "Expand [FRAME] beats in Act 2."
+      },
+      {
+        "sceneRange": {
+          "from": 11,
+          "to": 15
+        },
+        "label": "[FRAME] payoff",
+        "beat": "Pay off [FRAME] beats in Act 3."
+      }
+    ],
+    "notes": "Mark `[FRAME]` beats when an artifact drives discovery. Frame reveals must advance plot or reframe stakes, not repeat info; pair every frame beat with a live scene consequence."
+  }
+]

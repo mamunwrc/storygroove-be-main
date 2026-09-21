@@ -1,0 +1,22 @@
+{
+  "schema_version": "1",
+  "feature_id": "api-usage-admin",
+  "title": "API Usage Administration",
+  "description": "Super-admin dashboard for OpenAI usage, costs, rate limits, and user blocking.",
+  "source_paths": [
+    "routers/apiUsageRoute.js",
+    "controllers/apiUsageController.js",
+    "middleware/checkRateLimit.js",
+    "models/apiUsageLogModel.js",
+    "models/apiUsageSettingsModel.js",
+    "models/rateLimitEventModel.js",
+    "constants/modelPricing.js",
+    "utils/logApiUsage.js",
+    "utils/recomputeApiUsageCost.js"
+  ],
+  "related_paths": [],
+  "entrypoints": [
+    "routers/apiUsageRoute.js"
+  ],
+  "mapping_confidence": "high"
+}

@@ -1,0 +1,3 @@
+{"level":"debug","message":{"test_logger":"testing winston logger"},"service":"user-service"}
+{"level":"debug","message":"{\"error\":\"invalid_grant\",\"error_description\":\"Authorization code is expired.\",\"log_id\":\"202310070734368E82CEBFDE981335877D\"}","service":"user-service"}
+{"level":"error","service":"user-service"}

@@ -1,0 +1,35 @@
+---
+description: "MongoDB and Mongoose conventions for storygroove-be"
+globs: ["**/models/**", "**/docs/database/**"]
+autoAttach: true
+---
+
+# Database rules — storygroove-be
+
+## Stack
+
+- **MongoDB** with **Mongoose**. Schemas live in `models/*.js`. There is **no Prisma** and **no automated migration runner**.
+
+## Naming
+
+- **Model names**: singular PascalCase in code (`Novel`, `User`). Mongoose collection names default to lowercased plural forms unless overridden.
+- **Fields**: prefer **camelCase** in new schema paths; some legacy fields may differ—follow the existing file when editing.
+
+## Schema patterns
+
+- Use `{ timestamps: true }` when `createdAt`/`updatedAt` are needed.
+- Use `enum` for fixed vocabularies (`User.status`, `Novel.status`, `User.role`, …).
+- Reference other documents with `mongoose.Schema.Types.ObjectId` and `ref: "ModelName"`.
+- Add **`schema.index({ ... })`** for query patterns used in hot paths (user + novel, threadId, soft-delete flags, etc.).
+
+## Migrations
+
+Schema evolution is **deploy with code**. Document non-trivial or data-moving changes in `docs/database/migrations/migration-history.md` and use one-off scripts under `scripts/` when backfills are required.
+
+## Integrity
+
+No database-level foreign keys. Enforce ownership and referential expectations in controllers (e.g. scope by `req.user._id`). Character uniqueness is `{ novel, name, character }` (multiple protagonists/antagonists allowed); drop the legacy `{ novel, character }` unique index on deploy.
+
+## Documentation
+
+Prefer `docs/database/schema/*.md` for human-readable collection inventory; keep it aligned with `models/` when adding fields or collections.

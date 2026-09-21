@@ -1,0 +1,33 @@
+---
+description: "Backend architecture — Express layers, routers, services, models"
+globs: ["routers/**/*.js", "controllers/**/*.js", "service/**/*.js", "models/**/*.js", "architecture/**"]
+autoAttach: true
+---
+
+# Architecture — storygroove-be
+
+## Layers
+
+1. **Entry** (`index.js`): `dotenv`, Express, CORS (`CLIENT_URL`), JSON parser (10mb limit), Mongo connect, **Stripe webhook first** with `express.raw({ type: 'application/json' })`, then JSON routes. S3 proxy `GET /userData/*`, static `GET /backgrounds/*`, malformed-JSON handler, `listen`.
+2. **Routers** (`routers/`): compose `authenticateUserWithoutOpenAI`, `authenticateUser`, `isSubscribedUser`, `requireAdmin`, `requireSuperAdmin`, Multer, `checkRateLimit`.
+3. **Controllers** (`controllers/`): HTTP adapters; call `service/` and `models/`.
+4. **Services** (`service/`): OpenAI Responses/Assistants integrations, Stripe helpers, S3, Olivia memory pipeline, methodology loaders, etc.
+5. **Models** (`models/`): Mongoose schemas with indexes and occasional query hooks (e.g. soft-delete on `Novel`).
+6. **Config** (`config/`): `db.js`, `tokenverify.js`, `multer.js`, `s3Client.js`.
+
+## Domain boundaries
+
+- **Novel pipeline**: `novelRoute.js` + `novelController.js` + novel-related models (`Novel`, `Character`, `UserContent`, `EllisSceneReview`, `OliviaSceneSuggestion`, …) and scene checkpoint controller when enabled.
+- **Chat**: `chatRoute.js` mounted at `/api/v1` — `Thread`, `Message`; default handlers in `chatController.js`.
+- **Assistant admin + legacy**: `assistantRoute.js` — agent prompts, methodology CRUD, SimoneConfig; legacy thread/message handlers for Assistants API.
+- **Users**: `userRoute.js` + `userController.js` + `auth.js` + `User`.
+- **Billing**: `stripeRoute.js`, `stripeController.js`, `subscriberModel`, `subscriptionModel`, `invoicesModel`; public plan list `subscriptionRoute.js`.
+- **Superadmin**: `apiUsageRoute.js`, `activityLogRoute.js` under `/api/admin/*`.
+
+## Consumers
+
+The **React frontend** (separate app) calls this API over HTTPS in production with JWT in the `Authorization` header. This repo does not embed the SPA.
+
+## Dependencies
+
+Do not import frontend code. Share behavior only via HTTP contracts documented under `docs/api/`.
